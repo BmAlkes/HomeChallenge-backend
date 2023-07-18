@@ -1,9 +1,9 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
-const connectToDatabase = require("./database/mongoose.database");
-const UserRouter = require("./routes/user.routes");
-const NotesRouter = require("./routes/notes.routes");
+const connectToDatabase = require("./src/database/mongoose.database");
+const UserRouter = require("./src/routes/user.routes");
+const NotesRouter = require("./src/routes/notes.routes");
 
 dotenv.config();
 const app = express();
